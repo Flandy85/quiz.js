@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Awesome Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main>
+		<div class="quiz-container">
+			<div class="quiz-title">
+				<h1>The Awesome Quiz</h1>
+			</div><!-- quiz-title -->
+			<input type="button" id="start-button" value="Start Quiz" onclick="startQuiz();" class="start-button">
+			<div class="quiz-body" id="quiz-body" >
+				<form id="quiz" name="quiz" class="quiz-form">
+
+					<p>What is the capital of Sweden?</p>
+			
+					<input type="radio" id="questions" name="question1" value="Holmstock"> Holmstock<br>
+					<input type="radio" id="questions" name="question1" value="Göteborg"> Göteborg<br>
+					<input type="radio" id="questions" name="question1" value="Stockholm"> Stockholm<br>
+
+					<p>What kind of animal says "Woof"?</p>
+
+					<input type="radio" id="questions" name="question2" value="Cow"> Cow<br>
+					<input type="radio" id="questions" name="question2" value="Dog"> Dog<br>
+					<input type="radio" id="questions" name="question2" value="Ocelot"> Ocelot<br>
+
+					<p>What products does S&W company make?</p>
+
+					<input type="radio" id="questions" name="question3" value="Cars"> Cars<br>
+					<input type="radio" id="questions" name="question3" value="Guns"> Guns<br>
+					<input type="radio" id="questions" name="question3" value="Kitchen applience"> Kitchen applience<br>
+
+					<p>What products does VW company make?</p>
+
+					<input type="radio" id="questions" name="question4" value="Guns"> Guns<br>
+					<input type="radio" id="questions" name="question4" value="Cars"> Cars<br>
+					<input type="radio" id="questions" name="question4" value="Electronics"> Electronics<br>
+
+					<p>What does FED stands for?</p>
+
+					<input type="radio" id="questions" name="question5" value="FED"> Front End Developer<br>
+					<input type="radio" id="questions" name="question5" value="Force"> Force Evening Defence<br>
+					<input type="radio" id="questions" name="question1" value="Future"> Future Enviroment Development<br>
+					
+
+					<input type="button" id="button" value="Im done!" onclick="check();" class="button">
+		
+				</form>	
+				<div id="after_submit">
+					<p id="message"></p>
+					<p id="number_correct"></p>
+					<p id="game-time"></p>	
+					<img id="pictures" class="gif-picture">
+				</div><!-- after_submit -->			
+			</div><!-- quiz-body-->
+		</div><!-- quiz-container -->
+	</main>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
